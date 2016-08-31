@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style type="text/css">
+.htext {
+    text-align:center;
+}
+.col-md-4{
+    font-size: 150px;
+}
+</style>
+<head>
+    <title>Homepage</title>
+</head>
+
+<body>
+    <div class="htext">
+        <div>
+            <h1>Welcome to My Website</h1>
+        </div>
+        <div>
+            <h2>I have created this website using HTML, CSS, and Javascript</h2>
+        </div>
+        <div>
+            <h3>Hover over any of the titles to get more info about the different pages on my website. Click them to go to the website.</h3>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" id="About-Div" onmouseover="aboutmeFunction()" onmouseout="aboutmeoutFunction()">
+                About me
+            </div>
+            <div class="col-md-8">
+                <span id="About-Span"></span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" id="Hardware-Div" onmouseover="hardwareFunction()" onmouseout="hardwareoutFunction()">
+                Computer Hardware
+            </div>
+
+            <div class="col-md-8">
+                <span id="Hardware-Span"></span>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!--
+     <div class="col-md-4">
+        <div id="HTML-Div" onmouseover="htmlFunction()" onmouseout="htmloutFunction()">
+            HTML and CSS
+        </div>
+    </div>
+    <div class="col-md-8">
+        <span id="HTML-Span"></span>
+    </div>
+    <div>
+-->
+    </div>
+    <script type="text/javascript">
+        function aboutmeFunction() {
+            document.getElementById("About-Span").innerHTML = "banana";
+        }
+
+        function aboutmeoutFunction() {
+            document.getElementById("About-Span").innerHTML = "";
+        }
+
+        function aboutclickFunction() {
+            var about = document.getElementById("About-Div")
+            about.addEventListener("click", function() {
+                window.open("aboutme.html")
+                window.close("index.html")
+            })
+        }
+        aboutclickFunction();
+
+        function hardwareFunction() {
+            document.getElementById("Hardware-Span").innerHTML = "Test"
+        }
+
+        function hardwareoutFunction() {
+            document.getElementById("Hardware-Span").innerHTML = ""
+        }
+
+        function hardwareclickFunction() {
+            var about = document.getElementById("Hardware-Div")
+            about.addEventListener("click", function() {
+                window.open("hardware.html")
+                window.close("index.html")
+            })
+        }
+        hardwareclickFunction();
+
+        function htmlFunction() {
+            document.getElementById("HTML-Span").innerHTML = "teste"
+        }
+
+        function htmloutFunction() {
+            document.getElementById("HTML-Span").innerHTML = ""
+        }
+
+        function htmlclickFunction() {
+            var about = document.getElementById("HTML-Div")
+            about.addEventListener("click", function() {
+                window.open("htmlcss.html")
+                window.close("index.html")
+            })
+        }
+        htmlclickFunction();
+    </script>
+</body>
+
+</html>
