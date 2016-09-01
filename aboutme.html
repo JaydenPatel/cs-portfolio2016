@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style type="text/css">
+    html {
+        background-color: black;
+        color: white;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .img {
+        width: 100px;
+        height: 300px;
+        border: solid 10px transparent;
+    }
+    
+    .img:hover {
+        border-color: green;
+    }
+    
+    #span {
+        color: white;
+    }
+</style>
 
 <head>
     <title>About Me</title>
 </head>
+<h1>Who I am</h1>
+<h2>Hover over any of the pictures below to get more information about me. Scroll down for general information about me.</h2>
 
 <body>
+
+    <div class="row">
+        <div class="col-md-3">
+            <img class="img" id="img1" src="Summit.jpg">
+        </div>
+        <div class="col-md-3">
+            <img class="img" id="img2" src="">
+        </div>
+        <div class="col-md-3">
+            <img class="img" id="img3" src="">
+        </div>
+        <div class="col-md-3">
+            <img class="img" id="img4" src="">
+        </div>
+    </div>
+    <span id="info"></span>
 </body>
+<script type="text/javascript" src="aboutme.js"></script>
 
 </html>
