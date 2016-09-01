@@ -3,52 +3,117 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <style type="text/css">
-.htext {
-    text-align:center;
-}
-.col-md-4{
-    font-size: 150px;
-}
+    html,
+    div,
+    br,
+    body {
+        background-color: black;
+        color: white;
+    }
+    
+    .htext {
+        text-align: center;
+    }
+    
+    h1:hover {
+        font-size: 50px;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        color: #00f5f7;
+    }
+    
+    .col-md-4 {
+        font-size: 50px;
+    }
+    
+    #About-Div,
+    #Hardware-Div {
+        font-size: 50px;
+    }
+    
+    #About-Div:hover {
+        background-color: #00ffff;
+        color: black;
+    }
+    
+    #Hardware-Div:hover {
+        background-color: #00ffff;
+        color: black;
+    }
+    
+    #About-Span,
+    #Hardware-Span {
+        font-size: 25px;
+    }
+    
+    .horn {
+        width: 120px;
+        height:120px;
+       position: absolute;
+    }
+    .col-md-1 {
+        text-align: center;
+    }
 </style>
+
 <head>
     <title>Homepage</title>
 </head>
 
 <body>
-    <div class="htext">
-        <div>
-            <h1>Welcome to My Website</h1>
-        </div>
-        <div>
-            <h2>I have created this website using HTML, CSS, and Javascript</h2>
-        </div>
-        <div>
-            <h3>Hover over any of the titles to get more info about the different pages on my website. Click them to go to the website.</h3>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4" id="About-Div" onmouseover="aboutmeFunction()" onmouseout="aboutmeoutFunction()">
-                About me
+    <div class="color">
+        <div class="htext">
+            <div id="h1" onmouseover="hornFunction()" onmouseout="hornoutFunction()">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <span id="horn"></span>
+                        </div>
+                        <div class="col-md-8">
+                            <h1>Welcome to My Website</h1>
+                        </div>
+                        <div class="col-md-1">
+                            <span id="horn1"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8">
-                <span id="About-Span"></span>
+            <div>
+                <h2>I have created this website using HTML, CSS, and Javascript</h2>
+            </div>
+            <div>
+                <h3>Hover over any of the titles to get more info about the different pages on my website. Click them to go to the website.</h3>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4" id="Hardware-Div" onmouseover="hardwareFunction()" onmouseout="hardwareoutFunction()">
-                Computer Hardware
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" id="About-Div" onmouseover="aboutmeFunction()" onmouseout="aboutmeoutFunction()">
+                    About me
+                </div>
+                <br>
+                <div class="col-md-9">
+                    <div id="ASpanDiv"><span id="About-Span"></span></div>
+                </div>
             </div>
+        </div>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" id="Hardware-Div" onmouseover="hardwareFunction()" onmouseout="hardwareoutFunction()">
+                    Computer Hardware
+                </div>
+                <br>
+                <div class="col-md-9">
+                    <div id="HSpanDiv"><span id="Hardware-Span"></span></div>
+                </div>
 
-            <div class="col-md-8">
-                <span id="Hardware-Span"></span>
             </div>
-
         </div>
     </div>
-    </div>
+
     <!--
      <div class="col-md-4">
         <div id="HTML-Div" onmouseover="htmlFunction()" onmouseout="htmloutFunction()">
@@ -63,7 +128,7 @@
     </div>
     <script type="text/javascript">
         function aboutmeFunction() {
-            document.getElementById("About-Span").innerHTML = "banana";
+            document.getElementById("About-Span").innerHTML = "This is a webpage all about me. It will tell who I am, what I like, and things I like to do.";
         }
 
         function aboutmeoutFunction() {
@@ -80,7 +145,7 @@
         aboutclickFunction();
 
         function hardwareFunction() {
-            document.getElementById("Hardware-Span").innerHTML = "Test"
+            document.getElementById("Hardware-Span").innerHTML = "The hardware webpage is all about the internal compnemts of a computer and how they work. It will give an in depth explanation on the usage of it and why we use it. It will also include some external compnents"
         }
 
         function hardwareoutFunction() {
@@ -112,6 +177,20 @@
             })
         }
         htmlclickFunction();
+
+        function hornFunction() {
+
+            var horn = "<img class='horn' src='horn.png' />"
+            var horn1 = "<img class='horn' src='horn.1.png' />"
+
+            document.getElementById("horn").innerHTML = horn
+            document.getElementById("horn1").innerHTML = horn1
+        }
+
+        function hornoutFunction() {
+            document.getElementById("horn").innerHTML = ""
+            document.getElementById("horn1").innerHTML = ""
+        }
     </script>
 </body>
 
