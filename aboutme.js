@@ -38,7 +38,7 @@ img4.addEventListener("mouseover", img4function)
 img4.addEventListener("mouseout", img4outfunction)
 
 function img4function() {
-    span.innerHTML = "My hobbies include playing video games, hanging out with people, and flying drones. I play on a xbox one and I mainly play rainbow six siege. I'm currently in a clan and play constantly. The drone is a DJI Phantom 4 and I use it to record videos using the intelligent flight system.    "
+    span.innerHTML = "My hobbies include playing video games, hanging out with people, and flying drones. I play on a Xbox one and I mainly play rainbow six siege. I'm currently in a clan and play constantly. The drone is a DJI Phantom 4 and I use it to record videos using the intelligent flight system.    "
 }
 
 function img4outfunction() {

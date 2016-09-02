@@ -2,6 +2,9 @@
 <html>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <style type="text/css">
     html {
         background-color: black;
@@ -38,11 +41,36 @@
         margin-right: 5px;
         margin-left: 5px;
     }
+    
+    .general-text {
+        text-align: center;
+    }
+    
+     .container {
+        text-align: left;
+        margin: 0;
+        padding :0;
+    }
+    
 </style>
 
 <head>
     <title>About Me</title>
 </head>
+<div class="container" style="  margin: 0;padding :0;">
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+    <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-left">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li class="divider"></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+</div>
+
 <h1>Who I am</h1>
 <h2>Hover over any of the pictures below to get more information about me. Scroll down for general information about me.</h2>
 
@@ -68,5 +96,11 @@
     </div>
 </body>
 <script type="text/javascript" src="aboutme.js"></script>
+<div class="general-text">
+    <text>
+      My name is Jayden. I am 14 years old and live in Pacifica, CA. I am tech support. Obviously, I am a nerd. This is my second year coding using HTML, CSS, and Javascript.
+    </text>
+</div>
+
 
 </html>
