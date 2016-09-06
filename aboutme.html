@@ -14,11 +14,13 @@
     h1 {
         text-align: center;
         font-size: 50px;
+        color: #00f5f7;
     }
     
     h2 {
         text-align: center;
         font-size: 25px;
+        color: #00f5f7;
     }
     
     .img {
@@ -28,7 +30,7 @@
     }
     
     .img:hover {
-        border-color: green;
+        border-color: #00ff00;
     }
     
     #span {
@@ -42,65 +44,80 @@
         margin-left: 5px;
     }
     
+    #info {
+        text-decoration: bold;
+    }
+    
     .general-text {
         text-align: center;
+        font-size: 22px;
+        margin-right: 5px;
+        margin-left: 5px;
     }
     
-     .container {
+    .container {
         text-align: left;
         margin: 0;
-        padding :0;
+        padding: 0;
+        position: absolute;
     }
     
+    .page {
+        color: white;
+        background-color: black;
+    }
+    
+    .btn btn-default dropdown-toggle {
+        color: blue;
+    }
 </style>
 
 <head>
     <title>About Me</title>
 </head>
-<div class="container" style="  margin: 0;padding :0;">
-    <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+<div class="page">
+    <div class="container" style="  margin: 0;padding :0;">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Nav Bar
     <span class="caret"></span></button>
-        <ul class="dropdown-menu dropdown-menu-left">
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">JavaScript</a></li>
-            <li class="divider"></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-    </div>
-</div>
-
-<h1>Who I am</h1>
-<h2>Hover over any of the pictures below to get more information about me. Scroll down for general information about me.</h2>
-
-<body>
-
-    <div class="row">
-        <div class="col-md-3">
-            <img class="img" id="img1" src="Summit.jpg">
-        </div>
-        <div class="col-md-3">
-            <img class="img" id="img2" src="Cabo.jpg">
-        </div>
-        <div class="col-md-3">
-            <img class="img" id="img3" src="Saw.jpg">
-        </div>
-        <div class="col-md-3">
-            <img class="img" id="img4" src="rainbowsix.gif">
+            <ul class="dropdown-menu dropdown-menu-&#x2190;">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="hardware.html">Hardware</a></li>
+            </ul>
         </div>
     </div>
+    <h1>Who I am</h1>
+    <h2>Hover over any of the pictures below to get more information about me. Scroll down for general information about me.</h2>
+
+    <body>
+
+        <div class="row">
+            <div class="col-md-3">
+                <img class="img" id="img1" src="Summit.jpg">
+            </div>
+            <div class="col-md-3">
+                <img class="img" id="img2" src="Cabo.jpg">
+            </div>
+            <div class="col-md-3">
+                <img class="img" id="img3" src="Saw.jpg">
+            </div>
+            <div class="col-md-3">
+                <img class="img" id="img4" src="rainbowsix.gif">
+            </div>
+        </div>
+        <br>
+        <div class="spandiv">
+            <span id="info"></span>
+        </div>
+    </body>
+    <script type="text/javascript" src="aboutme.js"></script>
     <br>
-    <div class="spandiv">
-        <span id="info"></span>
-    </div>
-</body>
-<script type="text/javascript" src="aboutme.js"></script>
-<div class="general-text">
-    <text>
+    <div class="general-text">
+        <text>
       My name is Jayden. I am 14 years old and live in Pacifica, CA. I am tech support. Obviously, I am a nerd. This is my second year coding using HTML, CSS, and Javascript.
     </text>
+    </div>
 </div>
-
 
 </html>
