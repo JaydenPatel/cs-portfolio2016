@@ -31,7 +31,8 @@
     }
     
     #About-Div,
-    #Hardware-Div {
+    #Hardware-Div,
+    #HTML-Div {
         font-size: 50px;
     }
     
@@ -45,8 +46,14 @@
         color: black;
     }
     
+    #HTML-Div:hover {
+        background-color: #00ffff;
+        color: black;
+    }
+    
     #About-Span,
-    #Hardware-Span {
+    #Hardware-Span,
+    #HTML-Span {
         font-size: 25px;
     }
     
@@ -116,19 +123,20 @@
 
             </div>
         </div>
-    </div>
 
-    <!--
-     <div class="col-md-4">
-        <div id="HTML-Div" onmouseover="htmlFunction()" onmouseout="htmloutFunction()">
-            HTML and CSS
+
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" id="HTML-Div" onmouseover="htmlFunction()" onmouseout="htmloutFunction()">
+                    How to
+                </div>
+
+                <div class="col-md-9">
+                    <span id="HTML-Span"></span>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="col-md-8">
-        <span id="HTML-Span"></span>
-    </div>
-    <div>
--->
     </div>
     <script type="text/javascript">
         function aboutmeFunction() {
@@ -166,7 +174,7 @@
         hardwareclickFunction();
 
         function htmlFunction() {
-            document.getElementById("HTML-Span").innerHTML = "teste"
+            document.getElementById("HTML-Span").innerHTML = "A page describing how I made the Hardware page. It will show the different lines of code that I used to create the different elements needed to create the page you see"
         }
 
         function htmloutFunction() {
@@ -176,7 +184,7 @@
         function htmlclickFunction() {
             var about = document.getElementById("HTML-Div")
             about.addEventListener("click", function() {
-                window.open("htmlcss.html")
+                window.open("howto.html")
                 window.close("index.html")
             })
         }
