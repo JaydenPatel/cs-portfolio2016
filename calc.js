@@ -32,7 +32,7 @@ function assignEventListenerNumber(htmlObj, index) {
     });
 }
 
-// Operators et. multiplication divison, subtraction, addition
+// Operators like multiplication divison, subtraction, addition
 
 function assignEventListenerOperator(htmlObj, index) {
     htmlObj.addEventListener("click", function() {
@@ -65,7 +65,7 @@ clear.addEventListener("click", function() {
 var mean = document.getElementById("mean");
 mean.addEventListener("click", function() {
     var ans;
-    ans = eval(display.value) t;
+    ans = eval(display.value);
     ans = ans / ((display.value.length / 2) + 0.5);
     display.value = ans
 

@@ -1,3 +1,4 @@
+
 p {
   text-align: center;
   font-size: 18px;
@@ -27,19 +28,24 @@ body {
   background-size: cover;
 }
 
+/* Allows the buttons to lines to be properly next to each other */
+
 .row {
   padding: 0px;
   margin: 0px;
   border: 0px;
 }
 
+
+/* Entire calculator */
+
 .calculator {
-  height: 420px;
+  height: 440px;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 320px;
-  /* width: 230px */
+  width: 275px;
+  /*width: 230px;*/
   background: #00ccff;
   background: linear-gradient(#9dd2ea, #80e5ff);
   border-radius: 3px;
@@ -48,6 +54,9 @@ body {
   text-align: center;
   border: 1.7px;
 }
+
+
+/* All the buttons */
 
 button {
   width: 45px;
@@ -64,38 +73,28 @@ button {
   margin-left: 2px;
   margin-right: 2px;
   border: 0;
+  cursor: pointer;
+  user-select: none;
 }
 
-.plus {
-  height: 45px;
-  width: 45px;
-  float: right;
-  display: inline-block;
-  margin-right: 11px;
-}
+
+/* Row short */
 
 .short {
   display: inline-block;
   margin: 0;
 }
 
-button:focus {
-  outline: 0;
-}
 
-button:active {
-  background-color: #bfbfbf;
-  box-shadow: 0px 0px;
-  top: 4px;
-}
+/* Clear button */
 
 .clear {
-  background-color: red;
+  /*background-color: #CD5C5C;*/
   width: 45px;
   height: 45px;
   border-radius: 3px;
-  box-shadow: 0px 4px #bfbfbf;
-  top: 4px;
+  /*box-shadow: 0px 4px #CD5C5C;*/
+  /*box-shadow: 0px 4px rgba(0, 0, 0, 0.2);*/
   margin: 0 7px 11px 0;
   color: black;
   line-height: 36px;
@@ -104,13 +103,55 @@ button:active {
   user-select: none;
   /*Smoothing out hover and active states using css3 transitions */
   transition: all 0.2s ease;
+  background: #ff9fa8;
+  box-shadow: 0px 4px #ff7c87;
+  color: white;
+}
+
+.clear:hover {
+  background: #CD5C5C;
+  box-shadow: 0px 4px #9c3030;
+  color: white;
 }
 
 .clear:active {
-  background-color: #cc0000;
   top: 4px;
-  box-shadow: 0px 0px #d3545d
+  box-shadow: 0px 0px #9c3030;
+  background: #CD5C5C;
 }
+
+
+/* Default clear button */
+
+
+/*.clear:hover {*/
+
+
+/*	background: #f68991;*/
+
+
+/*	box-shadow: 0px 4px #d3545d;*/
+
+
+/*	color: white;*/
+
+
+/*}*/
+
+
+/*.clear:active {*/
+
+
+/*	top: 4px;*/
+
+
+/*	box-shadow: 0px 0px #d3545d;*/
+
+
+/*}*/
+
+
+/* Operators et. multiplication, divison, addition, etc */
 
 .operators {
   background-color: #ffe6ee;
@@ -125,10 +166,55 @@ button:active {
   line-height: 36px;
   text-align: center;
   /*prevent selection of text inside keys */
+  cursor: pointer;
   user-select: none;
   /*Smoothing out hover and active states using css3 transitions */
   transition: all 0.2s ease;
 }
+
+.operators:hover {
+  background: #ffcc99;
+  box-shadow: 0px 4px #ffb366;
+  color: white;
+}
+
+.operators:active {
+  box-shadow: 0px 0px #6b54d3;
+  top: 4px;
+}
+
+
+/* Default one operators look */
+
+
+/*.operators:hover {*/
+
+
+/*  background: #9c89f6;*/
+
+
+/*	box-shadow: 0px 4px #6b54d3;*/
+
+
+/*	color: white;*/
+
+
+/*}*/
+
+
+/*.operators:active {*/
+
+
+/*  box-shadow: 0px 0px #6b54d3;*/
+
+
+/*  top: 4px;*/
+
+
+/*}*/
+
+
+/* Answer output/screen */
 
 input[type=text] {
   border-radius: 7px;
@@ -142,17 +228,6 @@ input[type=text] {
   font-size: 2em;
   text-align: right;
   line-height: 10px;
-}
-
-.title {
-  margin-top: 10px;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: black;
-}
-
-#screen {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
@@ -161,8 +236,12 @@ input[type=text] {
   line-height: 40px;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: right;
   letter-spacing: 1px;
 }
+
+
+/* Numbers 1 - 9 */
 
 .numbers {
   border-radius: 3px;
@@ -172,26 +251,45 @@ input[type=text] {
   line-height: 36px;
   text-align: center;
   /*prevent selection of text inside keys */
+  cursor: pointer;
   user-select: none;
   /*Smoothing out hover and active states using css3 transitions */
   transition: all 0.2s ease;
 }
 
-.equals:active {
-  background: #abb850;
-  box-shadow: 0px 4px #717a33;
-  color: #ffffff;
-  border-radius: 3px;
+.numbers:hover {
+  background: #9999ff;
+  box-shadow: 0px 4px #6b54d3;
+  color: white;
 }
+
+.numbers:active {
+  box-shadow: 0px 0px #6b54d3;
+  top: 4px;
+}
+
+
+/* Equal Button */
 
 .equals {
   background: #f1ff92;
   box-shadow: 0px 4px #9da853;
   color: #888e5f;
   border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
 }
 
-#equal {
+.equals:hover {
+  background: #abb850;
+  box-shadow: 0px 4px #717a33;
+  color: #ffffff;
   border-radius: 3px;
 }
-btw you need to fill out a student agreement form for the techday@google, check on the site. 
+
+.equals:active {
+  top: 4px;
+  box-shadow: 0px 0px #d3545d;
+}
+
+
