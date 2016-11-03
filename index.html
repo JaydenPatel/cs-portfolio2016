@@ -32,7 +32,8 @@
     
     #About-Div,
     #Hardware-Div,
-    #HTML-Div {
+    #HTML-Div,
+    #Calc-Div{
         font-size: 50px;
     }
     
@@ -51,9 +52,15 @@
         color: black;
     }
     
+    #Calc-Div:hover {
+        background-color: #00ffff;
+        color: black;
+    }
+    
     #About-Span,
     #Hardware-Span,
-    #HTML-Span {
+    #HTML-Span,
+    #Calc-Span{
         font-size: 25px;
     }
     
@@ -66,6 +73,7 @@
     .col-md-1 {
         text-align: center;
     }
+    
     #message {
         display: none;
     }
@@ -140,9 +148,22 @@
                 </div>
             </div>
         </div>
+
+
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" id="Calc-Div" onmouseover="calcFunction()" onmouseout="calcoutFunction()">
+                    Calculator
+                </div>
+
+                <div class="col-md-9">
+                    <div id="HSpanDiv"><span id="Calc-Span"></span></div>
+                </div>
+            </div>
+        </div>
     </div>
     <script type="text/javascript">
-
         function aboutmeFunction() {
             document.getElementById("About-Span").innerHTML = "This is a webpage all about me. It will tell who I am, what I like, and things I like to do.";
         }
@@ -194,19 +215,55 @@
         }
         htmlclickFunction();
 
-        function hornFunction() {
+        function calcFunction() {
+            document.getElementById("Calc-Span").innerHTML = "Cancer"
+        }
 
-            var horn = "<img class='horn' src='horn.png' />"
-            var horn1 = "<img class='horn' src='horn.1.png' />"
+        function calcoutFunction() {
+            document.getElementById("Calc-Span").innerHTML = ""
+        }
 
-            document.getElementById("horn").innerHTML = horn
-            document.getElementById("horn1").innerHTML = horn1
+        function calcclickFunction() {
+            var about = document.getElementById("Calc-Div")
+            about.addEventListener("click", function() {
+                window.open("calc.html")
+                window.close("index.html")
+            })
+        }
+        calcclickFunction();
+/*
+        //function htmlFunction() {
+        document.getElementById("HTML-Span").innerHTML = "A page describing how I made the Hardware page. It will show the different lines of code that I used to create the different elements needed to create the page you see"
+        }
+
+        function htmloutFunction() {
+            document.getElementById("HTML-Span").innerHTML = ""
+        }
+
+        function htmlclickFunction() {
+            var about = document.getElementById("HTML-Div")
+            about.addEventListener("click", function() {
+                window.open("howto.html")
+                window.close("index.html")
+            })
+        }
+        htmlclickFunction();
+
+        //   function hornFunction() {
+
+        var horn = "<img class='horn' src='horn.png' />"
+        var horn1 = "<img class='horn' src='horn.1.png' />"
+
+        document.getElementById("horn").innerHTML = horn
+        document.getElementById("horn1").innerHTML = horn1
         }
 
         function hornoutFunction() {
             document.getElementById("horn").innerHTML = ""
             document.getElementById("horn1").innerHTML = ""
         }
+        
+        */
     </script>
 </body>
 

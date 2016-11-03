@@ -1,0 +1,197 @@
+p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.container {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+.calc {
+  background-color: black;
+}
+
+.page,
+body {
+  height: 100%;
+  background: white;
+  background: radial-gradient(circle, #fff 1%, #a6a6a6);
+  background-size: cover;
+}
+
+.row {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.calculator {
+  height: 420px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  /* width: 230px */
+  background: #00ccff;
+  background: linear-gradient(#9dd2ea, #80e5ff);
+  border-radius: 3px;
+  box-shadow: 0px 4px #007a99, 0px 10px 15px rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  text-align: center;
+  border: 1.7px;
+}
+
+button {
+  width: 45px;
+  height: 45px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background: #f2f2f2;
+  box-shadow: 0px 4px #bfbfbf;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px;
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 2px;
+  border: 0;
+}
+
+.plus {
+  height: 45px;
+  width: 45px;
+  float: right;
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.short {
+  display: inline-block;
+  margin: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  background-color: #bfbfbf;
+  box-shadow: 0px 0px;
+  top: 4px;
+}
+
+.clear {
+  background-color: red;
+  width: 45px;
+  height: 45px;
+  border-radius: 3px;
+  box-shadow: 0px 4px #bfbfbf;
+  top: 4px;
+  margin: 0 7px 11px 0;
+  color: black;
+  line-height: 36px;
+  text-align: center;
+  /*prevent selection of text inside keys */
+  user-select: none;
+  /*Smoothing out hover and active states using css3 transitions */
+  transition: all 0.2s ease;
+}
+
+.clear:active {
+  background-color: #cc0000;
+  top: 4px;
+  box-shadow: 0px 0px #d3545d
+}
+
+.operators {
+  background-color: #ffe6ee;
+  width: 45px;
+  height: 45px;
+  box-shadow: 0px 4px #990000;
+  border-radius: 3px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  margin: 0 7px 11px 0;
+  color: #888;
+  line-height: 36px;
+  text-align: center;
+  /*prevent selection of text inside keys */
+  user-select: none;
+  /*Smoothing out hover and active states using css3 transitions */
+  transition: all 0.2s ease;
+}
+
+input[type=text] {
+  border-radius: 7px;
+  width: 87%;
+  margin-bottom: 10px;
+  line-height: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #C3C2AB;
+  font-size: 2em;
+  text-align: right;
+  line-height: 10px;
+}
+
+.title {
+  margin-top: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: black;
+}
+
+#screen {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+  /* Typography */
+  font-size: 25px;
+  line-height: 40px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+.numbers {
+  border-radius: 3px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 7px 11px 0;
+  color: #888;
+  line-height: 36px;
+  text-align: center;
+  /*prevent selection of text inside keys */
+  user-select: none;
+  /*Smoothing out hover and active states using css3 transitions */
+  transition: all 0.2s ease;
+}
+
+.equals:active {
+  background: #abb850;
+  box-shadow: 0px 4px #717a33;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.equals {
+  background: #f1ff92;
+  box-shadow: 0px 4px #9da853;
+  color: #888e5f;
+  border-radius: 3px;
+}
+
+#equal {
+  border-radius: 3px;
+}
+btw you need to fill out a student agreement form for the techday@google, check on the site. 
