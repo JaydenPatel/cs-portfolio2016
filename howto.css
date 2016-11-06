@@ -1,0 +1,50 @@
+.container {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+    }
+    
+    html,
+    .html {
+        background-color: black;
+    }
+    
+    h1,
+    h2 {
+        color: #00f5f7;
+    }
+    h1 {
+        text-decoration: underline;
+    }
+    
+    .t-a {
+        text-align: center;
+    }
+    
+    .img {
+        width: 456.66px;
+        height: 425px;
+    }
+    
+    .col-md-4 {
+        padding: 0;
+    }
+    
+    .img {
+        border: 5px solid transparent;
+    }
+    
+    .img:hover {
+        border-color: #66ffff;
+    }
+    
+    span {
+        color: white;
+        font-size: 20px;
+    }
+    
+    h3 {
+        text-decoration: underline;
+        color: #00f5f7;
+    }

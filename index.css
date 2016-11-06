@@ -1,0 +1,73 @@
+    html,
+    div,
+    br,
+    body {
+        background-color: black;
+        color: white;
+    }
+    
+    .htext {
+        text-align: center;
+    }
+    
+    h1:hover {
+        font-size: 50px;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        color: #00f5f7;
+    }
+    
+    .col-md-4 {
+        font-size: 50px;
+    }
+    
+    #About-Div,
+    #Hardware-Div,
+    #HTML-Div,
+    #Calc-Div{
+        font-size: 50px;
+    }
+    
+    #About-Div:hover {
+        background-color: #00ffff;
+        color: black;
+    }
+    
+    #Hardware-Div:hover {
+        background-color: #00ffff;
+        color: black;
+    }
+    
+    #HTML-Div:hover {
+        background-color: #00ffff;
+        color: black;
+    }
+    
+    #Calc-Div:hover {
+        background-color: #00ffff;
+        color: black;
+    }
+    
+    #About-Span,
+    #Hardware-Span,
+    #HTML-Span,
+    #Calc-Span{
+        font-size: 25px;
+    }
+    
+    .horn {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+    }
+    
+    .col-md-1 {
+        text-align: center;
+    }
+    
+    #message {
+        display: none;
+    }
