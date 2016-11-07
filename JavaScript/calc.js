@@ -10,10 +10,7 @@
 
 // Fixing decimal ✔ Done
 
-var input1;
-var input2;
-var noOperator = true;
-var hasOperator = false;
+
 var operators = document.querySelectorAll("button.operators");
 var numbers = document.querySelectorAll("button.numbers");
 var display = document.getElementById("screen");
