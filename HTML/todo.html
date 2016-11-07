@@ -5,22 +5,33 @@
     <title>To-Do List</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/todo.css" type="text/css" />
 </head>
-<style>
-    html {
-        background-color: black;
-        color: #00f5f7;
-    }
-    
-    h1 {
-        text-align: center;
-    }
-</style>
 <h1>To-Do List</h1>
 
 <body>
+    <br>
+    <center>
+        <div id="toDoListBackground">
+            <div id="toDoList">
+                <p>
+                    <label for="new-task">Add Item</label><input id="new-task" type="text"><button><strong>Add</strong></button>
+                </p>
 
+                <h3>To-do</h3>
+                <ul id="incomplete-tasks">
+                    <br>
+                </ul>
+
+                <h3>Completed</h3>
+                <ul id="completed-tasks">
+                    <br>
+                    <br>
+                </ul>
+            </div>
+        </div>
+    </center>
 </body>
-<script type="text/javascript" src="todo.js"></script>
+<script type="text/javascript" src="../JavaScript/todo.js"></script>
 
 </html>
