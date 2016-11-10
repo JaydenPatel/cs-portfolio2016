@@ -88,6 +88,18 @@
                 </div>
             </div>
         </div>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" id="Todo-Div" onmouseover="todoFunction()" onmouseout="todooutFunction()">
+                    To-Do List
+                </div>
+
+                <div class="col-md-9">
+                    <div id="HSpanDiv"><span id="Todo-Span"></span></div>
+                </div>
+            </div>
+        </div>
     </div>
     <script type="text/javascript">
         function aboutmeFunction() {
@@ -157,25 +169,25 @@
             })
         }
         calcclickFunction();
-        /*
-                //function htmlFunction() {
-                document.getElementById("HTML-Span").innerHTML = "A page describing how I made the Hardware page. It will show the different lines of code that I used to create the different elements needed to create the page you see"
-                }
 
-                function htmloutFunction() {
-                    document.getElementById("HTML-Span").innerHTML = ""
-                }
+        function todoFunction() {
+            document.getElementById("Todo-Span").innerHTML = "This is a todo list that uses cache files to save what you added. It is made using mainly Javascript."
+        }
 
-                function htmlclickFunction() {
-                    var about = document.getElementById("HTML-Div")
-                    about.addEventListener("click", function() {
-                        window.open("howto.html")
-                        window.close("index.html")
-                    })
-                }
-                htmlclickFunction();
+        function todooutFunction() {
+            document.getElementById("Todo-Span").innerHTML = ""
+        }
 
-                //   function hornFunction() {
+        function todoclickFunction() {
+            var about = document.getElementById("Todo-Div")
+            about.addEventListener("click", function() {
+                window.open("todo.html")
+                window.close("index.html")
+            })
+        }
+        todoclickFunction();
+
+        /*        //   function hornFunction() {
 
                 var horn = "<img class='horn' src='horn.png' />"
                 var horn1 = "<img class='horn' src='horn.1.png' />"

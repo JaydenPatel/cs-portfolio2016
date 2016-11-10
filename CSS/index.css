@@ -27,7 +27,8 @@
     #About-Div,
     #Hardware-Div,
     #HTML-Div,
-    #Calc-Div{
+    #Calc-Div,
+    #Todo-Div {
         font-size: 50px;
     }
     
@@ -51,10 +52,16 @@
         color: black;
     }
     
+    #Todo-Div:hover {
+        background-color: #00ffff;
+        color: black;
+    }
+    
     #About-Span,
     #Hardware-Span,
     #HTML-Span,
-    #Calc-Span{
+    #Calc-Span,
+    #Todo-Span{
         font-size: 25px;
     }
     
@@ -71,3 +78,4 @@
     #message {
         display: none;
     }
+    

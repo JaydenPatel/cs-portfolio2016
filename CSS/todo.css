@@ -29,7 +29,6 @@
     li * {
         float: left;
     }
-    
     li,
     h3 {
         clear: both;
@@ -163,5 +162,8 @@
         margin: 0 auto;
         position: relative;
         top: -40px;
+    }
+    #importantTasks label {
+       font-weight: bold;
     }
     
