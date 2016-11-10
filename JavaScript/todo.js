@@ -7,7 +7,7 @@ saveButton.addEventListener("click", function() {
     var incomplete = document.getElementById("incomplete-tasks");
     var complete = document.getElementById("completed-tasks");
     console.log(incomplete.innerHTML);
-    console.log(tcomplete.innerHTML);
+    console.log(complete.innerHTML);
     localStorage.setItem("incomplete-save", incomplete.innerHTML);
     localStorage.setItem("complete-save", complete.innerHTML);
   }
