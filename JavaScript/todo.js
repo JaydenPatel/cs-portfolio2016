@@ -21,27 +21,26 @@ retrieveButton.addEventListener("click", function() {
 
 
 
-var input = document.getElementById("new-task"); // Anything with the id of "new-task" now becomes the varibale "taskInput". 
+var input = document.getElementById("new-task"); 
 var addButton = document.getElementsByTagName("button")[0];
 var incompleteTasks = document.getElementById("incomplete-tasks");
 var completedTasks = document.getElementById("completed-tasks");
 var createNewTaskElement = function(taskString) {
-  var listItem = document.createElement("li"); //Creates new list item
-  var checkbox = document.createElement("input"); //Makes the checkbox a variable/input.
-  var label = document.createElement("label"); //Labels
-  var editMode = document.createElement("input"); //Creates an edit mode
-  var editButton = document.createElement("button"); //Activated edit mode
-  var deleteButton = document.createElement("button"); //Creates a delete button
-  // var importantTasks = document.getElementById("importantTasks");
+  var listItem = document.createElement("li"); 
+  var checkbox = document.createElement("input"); 
+  var label = document.createElement("label"); 
+  var editMode = document.createElement("input"); 
+  var editButton = document.createElement("button"); 
+  var deleteButton = document.createElement("button");
+
   //Modify each element
-  checkbox.type = "checkbox"; //Defines the input as "checkbox"
-  editMode.type = "text"; //Defines the type of input as "text"
-  editButton.innerText = "Edit"; //Names the button/text
-  editButton.className = "edit"; // Used to style edit button.
-  deleteButton.innerText = "Delete"; //Names the button/text 
-  deleteButton.className = "delete"; //Used to style delete button
+  checkbox.type = "checkbox"; 
+  editMode.type = "text"; 
+  editButton.innerText = "Edit"; 
+  editButton.className = "edit"; 
+  deleteButton.innerText = "Delete"; 
+  deleteButton.className = "delete"; 
   label.innerText = taskString;
-  // starImportant.type = "checkbox"; //Defines the input as "checkbox"
 
 
   listItem.appendChild(checkbox);
@@ -50,18 +49,10 @@ var createNewTaskElement = function(taskString) {
   listItem.appendChild(editButton);
   listItem.appendChild(deleteButton);
 
-  return listItem; //Lists the items
+  return listItem; 
 }
 
-/* document.onkeyup = function(e) {
-  var e = e || window.event; // for IE to cover IEs window object
-  if (e.ctrlKey && e.which == 66) {
-  }
-} */
-
-
-
-var addTask = function() { //Adds a new task
+var addTask = function() { 
   var listItem = createNewTaskElement(input.value);
   incompleteTasks.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
@@ -71,7 +62,7 @@ var addTask = function() { //Adds a new task
 
 
 
-var editTask = function() { // Edits an already made task
+var editTask = function() { 
   var listItem = this.parentNode;
 
   var inputEditMode = listItem.querySelector("input[type=text]")
@@ -95,34 +86,26 @@ var deleteTask = function() {
   ul.removeChild(listItem);
 }
 
-var taskCompleted = function() { // Shows that the task is complete
+var taskCompleted = function() { 
   var listItem = this.parentNode;
   completedTasks.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
 }
 
 var taskIncomplete = function() {
-  var listItem = this.parentNode; //Activates when the checkbox is really checked
+  var listItem = this.parentNode; 
   incompleteTasks.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
 }
-
-/* var taskImportant = function() {
-  var listItem = this.parentNode; //Activates when the checkbox is really checked
-  incompleteTasks.appendChild(listItem);
-  bindTaskEvents(listItem, importantTask);
-} */
-
 
 var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
   // console.log("test")
   var checkBox = taskListItem.querySelector("input[type=checkbox]");
   var editButton = taskListItem.querySelector("button.edit");
   var deleteButton = taskListItem.querySelector("button.delete");
-  // var checkBox2 = taskListItem.querySelector("importantTasks");
 
-  editButton.onclick = editTask; //connects edit task to the edit button
-  deleteButton.onclick = deleteTask; //connectes delete task to the delete button
+  editButton.onclick = editTask; 
+  deleteButton.onclick = deleteTask; 
   checkBox.onchange = checkBoxEventHandler;
 }
 
