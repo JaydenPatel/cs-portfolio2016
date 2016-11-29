@@ -10,17 +10,22 @@ saveButton.addEventListener("click", function() {
     console.log("function Start");
     var incomplete = document.getElementById("incomplete-tasks");
     var complete = document.getElementById("completed-tasks");
+    var saveNotice = document.getElementById("save-retrieve-notice");
     console.log(incomplete.innerHTML);
     console.log(complete.innerHTML);
     localStorage.setItem("incomplete-save", incomplete.innerHTML);
     localStorage.setItem("complete-save", complete.innerHTML);
+    saveNotice.innerHTML = "<h4 class='notice'>Saved!</h4>";
+
   }
 });
+var retrieveNotice = document.getElementById("save-retrieve-notice");
 var retrieveButton = document.getElementById("retrieveButton");
 retrieveButton.addEventListener("click", function() {
   //console.log(localStorage.getItem("lastname"))
   document.getElementById("incomplete-tasks").innerHTML = localStorage.getItem("incomplete-save");
   document.getElementById("completed-tasks").innerHTML = localStorage.getItem("complete-save");
+  retrieveNotice.innerHTML = "<h4 class='notice' >Retrieved!<h4>";
 });
 
 

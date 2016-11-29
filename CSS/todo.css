@@ -29,10 +29,16 @@
     li * {
         float: left;
     }
+    
     li,
     h3 {
         clear: both;
         list-style: none;
+    }
+    
+    h3 {
+        width: 400px;
+        text-align: center;
     }
     
     input,
@@ -163,7 +169,19 @@
         position: relative;
         top: -40px;
     }
+    
     #importantTasks label {
-       font-weight: bold;
+        font-weight: bold;
+    }
+    /* Spans */
+    
+    #save-retrieve-notice {
+        color: white;
+        font-size: 20px;
+        padding: 0;
+    }
+    
+    .notice {
+        margin: 0;
     }
     
