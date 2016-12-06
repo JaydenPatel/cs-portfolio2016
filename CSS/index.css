@@ -28,7 +28,8 @@
     #Hardware-Div,
     #HTML-Div,
     #Calc-Div,
-    #Todo-Div {
+    #Todo-Div,
+    #Howto2-Div {
         font-size: 50px;
     }
     
@@ -57,11 +58,17 @@
         color: black;
     }
     
+    #Howto2-Div:hover {
+        background-color: #00ffff;
+        color: black;
+    }
+    
     #About-Span,
     #Hardware-Span,
     #HTML-Span,
     #Calc-Span,
-    #Todo-Span{
+    #Todo-Span,
+    #Howto2-Span {
         font-size: 25px;
     }
     
