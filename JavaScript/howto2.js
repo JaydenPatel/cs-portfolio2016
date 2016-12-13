@@ -76,7 +76,7 @@ function reset() {
 
 titleHTML.addEventListener("click", reset);
 titleJS.addEventListener("click", reset)
-
+    
 function wholeThingInfo() {
     styleReset();
     text.innerHTML = "The calculator is only usable with the HTML. Using a combination of inputs and buttons we are able to create the entire interface portion of the calculator. The other parts of this HTML section will go in-depth on how each of the different sections works and why they are being  used. "
@@ -109,33 +109,34 @@ function variInfo() {
     styleReset();
     vari.style.textDecoration = "underline"
     text.innerHTML = "dsfsdfd";
-    photo.innerHTML = "<img class='img' src='../Pictures/calcVar.PNG' />"
+    photo.innerHTML = "<img class='img' src='../Pictures/calcVar.PNG' />";
+    console.log("yes")
 }
 
 function objInfo() {
     styleReset();
     obj.style.textDecoration = "underline"
-    text.innerHTML = "";
+    text.innerHTML = "fsdfsdfsd";
     photo.innerHTML = "<img class='img' src='../Pictures/' />"
 }
 
 function forLoopsInfo() {
     styleReset();
     forLoops.style.textDecoration = "underline"
-    text.innerHTML = "";
+    text.innerHTML = "weerwrrwer";
     photo.innerHTML = "<img class='img' src='../Pictures/' />"
 }
 
 function eocInfo() {
     styleReset();
     eoc.style.textDecoration = "underline"
-    text.innerHTML = "";
+    text.innerHTML = "vcbcvbcvb";
     photo.innerHTML = "<img class='img' src='../Pictures/' />"
 }
 
 function meanInfo() {
     styleReset();
     mean.style.textDecoration = "underline"
-    text.innerHTML = "";
+    text.innerHTML = "23232332";
     photo.innerHTML = "<img class='img' src='../Pictures/' />"
 }
