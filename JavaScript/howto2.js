@@ -108,8 +108,8 @@ function operatorsInfo() {
 function variInfo() {
     styleReset();
     vari.style.textDecoration = "underline"
-    text.innerHTML = "";
-    photo.innerHTML = "<img class='img' src='../Pictures/' />"
+    text.innerHTML = "dsfsdfd";
+    photo.innerHTML = "<img class='img' src='../Pictures/calcVar.PNG' />"
 }
 
 function objInfo() {
