@@ -61,3 +61,14 @@ div.wrap {
     overflow: hidden;
 }
 
+#wholeThing {
+    display: none;
+}
+
+#text {
+    display: initial;
+}
+
+#photo {
+    display: initial;
+}

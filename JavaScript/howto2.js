@@ -33,6 +33,7 @@ eoc.addEventListener("click", eocInfo);
 mean.addEventListener("click", meanInfo);
 
 
+
 function htmlClass() {
     htmlDiv.className = "show";
     titleHTML.className = "blue"
@@ -67,7 +68,7 @@ function styleReset() {
     eoc.style.textDecoration = "none"
     mean.style.textDecoration = "none"
 }
-
+/*
 function reset() {
     text.innerHTML = "";
     photo.innerHTML = "";
@@ -76,7 +77,7 @@ function reset() {
 
 titleHTML.addEventListener("click", reset);
 titleJS.addEventListener("click", reset)
-    
+*/
 function wholeThingInfo() {
     styleReset();
     text.innerHTML = "The calculator is only usable with the HTML. Using a combination of inputs and buttons we are able to create the entire interface portion of the calculator. The other parts of this HTML section will go in-depth on how each of the different sections works and why they are being  used. "
@@ -93,50 +94,52 @@ function inputInfo() {
 
 function numbersInfo() {
     styleReset();
-    numbers.style.textDecoration = "underline"
     text.innerHTML = "Now we get to the part of the HMTL that contains the numbers and basic operators. First, we start with class='row'. This creates a single row across the page and everything inside fills up that row. It is the best way to make everything even in the end. Next, we have Many buttons. Each button has a set value that is sent into the JavaScript to be computed. Then there are two classes: numbers and operators. It is pretty self explanatory what they represent. They are used for certain parts of the JavaScript as well as the CSS where I made them look different from each other";
     photo.innerHTML = "<img class='img' src='../Pictures/calcNumbers.PNG' />"
+    numbers.style.textDecoration = "underline"
 }
 
 function operatorsInfo() {
     styleReset();
-    operators.style.textDecoration = "underline"
     text.innerHTML = "The final part of the HTML are the operators. These aren't the basic four that we normally use. Those are in the numbers section. These are the bonus ones I have added to bring more functionality to the calculator. In this section, we have the average, exponents, square root, the clear button, pi, open parenthesis, closed parenthesis, and a comma. The average button is not used with the operators class. It is instead given the id of mean so that it can be used in its own function which I will explain later. Exponents and square roots are similar in the way it is used. Since all operators have a value that is taken to solve, exponents and square roots needed a similar value. That brings us to the math part of JavaScript. We used two functions. Math.pow() for exponents and Math.sqrt() for square root. Next is the clear. I will explain how this works in the JavasScript section. Now we can talk about the parenthesis. They are used to close the Math.pow and Math.sqrt functions since when they are clicked, they look like this: Math.pow( and Math.sqrt(. Finally, we have the comma. It is the most out of place. It is used for the exponent function because Math.pow requires it to know what is being raised to the power of what. 2 to the power of 3 would look like Math.pow(2,3). ";
     photo.innerHTML = "<img class='img' src='../Pictures/htmlOperators.png' />"
+    operators.style.textDecoration = "underline"
 }
 
 function variInfo() {
     styleReset();
-    vari.style.textDecoration = "underline"
     text.innerHTML = "dsfsdfd";
     photo.innerHTML = "<img class='img' src='../Pictures/calcVar.PNG' />";
-    console.log("yes")
+    vari.style.textDecoration = "underline"
+    if (text.innerHTML == "dsfsdfd") {
+        alert("yes")
+    }
 }
 
 function objInfo() {
     styleReset();
-    obj.style.textDecoration = "underline"
     text.innerHTML = "fsdfsdfsd";
     photo.innerHTML = "<img class='img' src='../Pictures/' />"
+    obj.style.textDecoration = "underline"
 }
 
 function forLoopsInfo() {
     styleReset();
-    forLoops.style.textDecoration = "underline"
     text.innerHTML = "weerwrrwer";
     photo.innerHTML = "<img class='img' src='../Pictures/' />"
+    forLoops.style.textDecoration = "underline"
 }
 
 function eocInfo() {
     styleReset();
-    eoc.style.textDecoration = "underline"
     text.innerHTML = "vcbcvbcvb";
     photo.innerHTML = "<img class='img' src='../Pictures/' />"
+    eoc.style.textDecoration = "underline"
 }
 
 function meanInfo() {
     styleReset();
-    mean.style.textDecoration = "underline"
     text.innerHTML = "23232332";
     photo.innerHTML = "<img class='img' src='../Pictures/' />"
+    mean.style.textDecoration = "underline"
 }
