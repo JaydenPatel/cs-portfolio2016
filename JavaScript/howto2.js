@@ -3,6 +3,7 @@ var titleHTML = document.getElementById("titleHTML");
 var htmlDiv = document.getElementById("htmlDiv");
 var titleJS = document.getElementById("titleJavascript");
 var jsDiv = document.getElementById("jsDiv");
+var spans = document.getElementById("spans");
 
 var wholeThing = document.getElementById("wholeThing");
 var input = document.getElementById("input");
@@ -37,6 +38,7 @@ mean.addEventListener("click", meanInfo);
 function htmlClass() {
     htmlDiv.className = "show";
     titleHTML.className = "blue";
+    wholeThing.className = "show";
     if (jsDiv.className == "show") {
         jsDiv.className = "JavaScript";
         titleJS.className = "black";
@@ -47,9 +49,11 @@ function htmlClass() {
 function jsClass() {
     jsDiv.className = "show";
     titleJS.className = "red";
+    spans.className = "show"
     if (htmlDiv.className == "show") {
         htmlDiv.className = "HTML";
         titleHTML.className = "black";
+        wholeThing.className = "wholeThing";
 
     }
 }

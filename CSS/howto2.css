@@ -26,7 +26,8 @@ h3 {
 
 .col-md-6,
 .col-md-4,
-.col-md-3 {
+.col-md-3,
+#wholeThing {
     text-align: center;
 }
 
@@ -35,11 +36,13 @@ h3 {
     height: 500px;
 }
 
-.col-md-3 {
+.col-md-3,
+#wholeThing {
     font-size: 35px;
 }
 
-.information {
+.information
+{
     font-size: 30px;
 }
 
@@ -59,4 +62,16 @@ h3 {
 div.wrap {
     height: 100%;
     overflow: hidden;
+}
+
+#text {
+    display: inline;
+}
+
+#htmlDiv {
+    display: none;
+}
+
+#wholeThing {
+    display: none;
 }
