@@ -60,15 +60,3 @@ div.wrap {
     height: 100%;
     overflow: hidden;
 }
-
-#wholeThing {
-    display: none;
-}
-
-#text {
-    display: initial;
-}
-
-#photo {
-    display: initial;
-}
