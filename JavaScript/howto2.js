@@ -9,8 +9,6 @@ var wholeThing = document.getElementById("wholeThing");
 var input = document.getElementById("input");
 var numbers = document.getElementById("numbers");
 var operators = document.getElementById("operators");
-var vari = document.getElementById("var");
-var obj = document.getElementById("obj");
 var forLoops = document.getElementById("forLoops");
 var eoc = document.getElementById("eoc");
 var mean = document.getElementById("mean");
@@ -27,8 +25,6 @@ wholeThing.addEventListener("click", wholeThingInfo);
 input.addEventListener("click", inputInfo);
 numbers.addEventListener("click", numbersInfo);
 operators.addEventListener("click", operatorsInfo);
-vari.addEventListener("click", variInfo);
-obj.addEventListener("click", objInfo);
 forLoops.addEventListener("click", forLoopsInfo);
 eoc.addEventListener("click", eocInfo);
 mean.addEventListener("click", meanInfo);
@@ -66,8 +62,6 @@ function styleReset() {
     input.style.textDecoration = "none";
     numbers.style.textDecoration = "none";
     operators.style.textDecoration = "none";
-    vari.style.textDecoration = "none";
-    obj.style.textDecoration = "none";
     forLoops.style.textDecoration = "none";
     eoc.style.textDecoration = "none";
     mean.style.textDecoration = "none";
@@ -110,37 +104,23 @@ function operatorsInfo() {
     operators.style.textDecoration = "underline";
 }
 
-function variInfo() {
-    styleReset();
-    text.innerHTML = "dsfsdfd";
-    photo.innerHTML = "<img class='img' src='../Pictures/calcVar.PNG' />";
-    vari.style.textDecoration = "underline";
-}
-
-function objInfo() {
-    styleReset();
-    text.innerHTML = "fsdfsdfsd";
-    photo.innerHTML = "<img class='img' src='../Pictures/' />";
-    obj.style.textDecoration = "underline";
-}
-
 function forLoopsInfo() {
     styleReset();
-    text.innerHTML = "weerwrrwer";
-    photo.innerHTML = "<img class='img' src='../Pictures/' />";
+    text.innerHTML = "The for loops are the main reason the entire thing works. The two that are shown actually do the same thing.  But one is for numbers and one is for the operators. First, we begin with the .length part. This determines how many different things are in each class. Numbers has 10. The assignEventListenerNumber is from a previous function that determines the value of each of the buttons. The numbers[i], numbers[i].value takes the number of options that we have and takes the actual value of them so that we can solve it later." + "<img class='oimg' src='../Pictures/calcFor.PNG' />";
+    photo.innerHTML = "";
     forLoops.style.textDecoration = "underline";
 }
 
 function eocInfo() {
     styleReset();
-    text.innerHTML = "vcbcvbcvb";
-    photo.innerHTML = "<img class='img' src='../Pictures/' />";
+    text.innerHTML = "The equal function is very simple. It uses the JavaScript eval() system. That automatically can solve any mathematical function inserted or it needs Math.() to solve. It is activated when eh equal button is pressed. The next part is the clear functions. It is also very simple because it just sets the display.value to nothing by saying that the value is equal to a space." + "<img class='oimg' src='../Pictures/calcMain.PNG  ' />";
+    photo.innerHTML = "";
     eoc.style.textDecoration = "underline";
 }
 
 function meanInfo() {
     styleReset();
-    text.innerHTML = "23232332";
-    photo.innerHTML = "<img class='img' src='../Pictures/' />";
+    text.innerHTML = "The average function was the hardest operator to get working. This is because what was needed to figure it out. First I needed the value of all of the numbers added together. This is why I made people only use the + symbol. Next, I need to know how many numbers were inputted. This was harder than it looks. I needed a formula that could take a number of objects in the display at one time and remove te plus symbols so that we would only have a number of numbers left. This was done with the formula x/2 + 0.5 and x being the number of objects in the display at one time. Then the original answer was dived by the amount of numbers and put into the display." + "<img class='oimg' src='../Pictures/calcMean.PNG' />";
+    photo.innerHTML = "";
     mean.style.textDecoration = "underline";
 }

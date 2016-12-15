@@ -1,17 +1,22 @@
 html {
     background-color: black;
-    color: white;
 }
 
 h1,
 h3 {
     text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
 }
 
 .col6 {
     text-align: center;
     font-size: 50px;
     text-decoration: bold;
+    background-color: black;
+    color: white;
 }
 
 .HTML {
@@ -22,13 +27,18 @@ h3 {
     display: none;
 }
 
-.show {}
+.show {
+    background-color: black;
+    color: white;
+}
 
 .col-md-6,
 .col-md-4,
 .col-md-3,
 #wholeThing {
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 .img {
@@ -41,9 +51,10 @@ h3 {
     font-size: 35px;
 }
 
-.information
-{
+.information {
     font-size: 30px;
+    background-color: black;
+    color: white;
 }
 
 .blue {
@@ -56,12 +67,14 @@ h3 {
 }
 
 .black {
-    color: black;
+    color: white;
 }
 
 div.wrap {
     height: 100%;
     overflow: hidden;
+    background-color: black;
+    color: white;
 }
 
 #text {
@@ -74,4 +87,20 @@ div.wrap {
 
 #wholeThing {
     display: none;
+}
+
+.container,
+.dropdown {
+    position: absolute;
+    text-align: left
+}
+
+.oimg {
+    width: 724px;
+    height: 191px;
+}
+
+.br {
+    background-color: black ;
+    color: white ;
 }
