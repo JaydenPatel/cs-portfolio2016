@@ -1,0 +1,47 @@
+    html,
+    .container-fluid {
+        background-color: black;
+        color: white;
+    }
+    
+    
+    #backInfo,
+    #codeTab {
+        text-align: center;
+        font-size: 3em;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 3.5em;
+        text-decoration: underline;
+        color: #00f5f7;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    .show {}
+    
+    .col-md-4 {
+        text-align: center;
+        font-size: 2.5em;
+        text-decoration: bold;
+    }
+    
+    .col-md-2 {
+        text-align: center;
+        text-decoration: bold;
+        font-size: 2em;
+    }
+    
+    .col-md-8 {
+        text-align: center;
+        font-size: 1.75em;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    

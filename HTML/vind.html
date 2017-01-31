@@ -9,26 +9,64 @@
 
 <head>
     <title>Vindinium</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<div class="container" style="  margin: 0;padding :0;">
-    <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Nav Bar
-    <span class="caret"></span></button>
-        <ul class="dropdown-menu dropdown-menu-&#x2190;">
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="hardware.html">Hardware</a></li>
-            <li><a href="howto.html">How to</a></li>
-            <li><a href="caLc.html">Calcutator</a></li>
-            <li><a href="todo.html">To Do List</a></li>
-            <li><a href="howto2.html">How to #2</a></li>
-            <li class="disabled"> <a href="vind.html">Vindinium</a></li>
-        </ul>
-    </div>
-</  div>
+
 
 <body>
+    <div class="container-fluid">
+        <div class="container" style="  margin: 0;padding :0;">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Nav Bar
+    <span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-&#x2190;">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="hardware.html">Hardware</a></li>
+                    <li><a href="howto.html">How to</a></li>
+                    <li><a href="caLc.html">Calcutator</a></li>
+                    <li><a href="todo.html">To Do List</a></li>
+                    <li><a href="howto2.html">How to #2</a></li>
+                    <li class="disabled"> <a href="vind.html">Vindinium</a></li>
+                </ul>
+            </div>
+        </div>
+        <h1>How to Make Vindinium AI</h1>
 
+        <div class="row">
+            <div class="col-md-6" class="secondTitle" id="backInfo">
+                Background Information
+            </div>
+            <div class="col-md-6" class="secondTitle" id="codeTab">
+                The Code Behind it All
+            </div>
+        </div>
+        <br>
+        <div class="hide" class="row" id="backInfoRow">
+            <div class='col-md-2'></div>
+            <div class='col-md-4' class='thirdTitle' id='aiDefine'>What is AI?</div>
+            <div class='col-md-4' class='thirdTitle' id='vindDefine'>What is Vindinium?</div>
+            <div class='col-md-2'></div>
+        </div>
+        <div class="hide" class="row" id="codeTabRow">
+            <div class='col-md-2' id="beginCode">Starting Point</div>
+            <div class='col-md-2' id="Emotion">Emotion Factor</div>
+            <div class='col-md-2' id="Task">Task Decider</div>
+            <div class='col-md-2' id="FindingMines">Finding Mines</div>
+            <div class='col-md-2' id="FindingTaverns">Finding Taverns</div>
+            <div class='col-md-2' id="AttackingPlayers">Attacking Players</div>
+
+        </div><br>
+        <div class="row">
+            <div class="col-md-2 col-md-push-8"> </div>
+            <div class="col-md-8 col-md-push-2">
+                <span id="infoSpan"></span>
+            </div>
+            <div class="col-md-2"> </div>
+        </div>
+    </div>
 </body>
+<script type="text/javascript" src="../JavaScript/vind.js"></script>
 
 </html>
