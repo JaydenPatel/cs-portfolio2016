@@ -32,7 +32,7 @@ var emotion = document.getElementById("Emotion");
 var task = document.getElementById("Task");
 var findingMines = document.getElementById("FindingMines");
 var findingTaverns = document.getElementById("FindingTaverns");
-var attackingPlayers = document.getElementById("AttckingPlayers");
+var attackingPlayers = document.getElementById("AttackingPlayers");
 var infoSpan = document.getElementById("infoSpan");
 
 aiDefine.addEventListener("click", aiDefineInfo);
