@@ -34,6 +34,7 @@ var findingMines = document.getElementById("FindingMines");
 var findingTaverns = document.getElementById("FindingTaverns");
 var attackingPlayers = document.getElementById("AttackingPlayers");
 var infoSpan = document.getElementById("infoSpan");
+var infoSpan1 = document.getElementById("infoSpan1");
 
 aiDefine.addEventListener("click", aiDefineInfo);
 vindDefine.addEventListener("click", vindDefineInfo);
@@ -61,11 +62,11 @@ function beginCodeInfo() {
 
 function emotionInfo() {
     infoSpan.innerHTML = "emotion";
-    console.log("emption");
+    console.log("emotion");
 }
 
 function taskInfo() {
-    infoSpan.innerHTML = " task";
+    infoSpan.innerHTML = "task";
     console.log("task define");
 }
 
