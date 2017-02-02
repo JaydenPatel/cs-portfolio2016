@@ -71,3 +71,35 @@
         color: white;
     }
     
+    .serverIMG {
+        width: 35em;
+        height: 2.5em;
+    }
+    
+    .botAIMG {
+        width: 35em;
+        height: 8em;
+    }
+    
+    .minesAIMG {
+        width: 35em;
+        height: 8em;
+    }
+    
+    hr {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 2.5px;
+        border-style: dashed;
+    }
+    
+    .emotionWhole,
+    .greed,
+    .anger {
+        width: 35em;
+    }
+    
