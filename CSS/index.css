@@ -29,7 +29,8 @@
     #HTML-Div,
     #Calc-Div,
     #Todo-Div,
-    #Howto2-Div {
+    #Howto2-Div,
+    #Vind-Div {
         font-size: 50px;
     }
     
@@ -63,12 +64,18 @@
         color: black;
     }
     
+    #Vind-Div:hover {
+        background-color: #00ffff;
+        color: black;
+    }
+    
     #About-Span,
     #Hardware-Span,
     #HTML-Span,
     #Calc-Span,
     #Todo-Span,
-    #Howto2-Span {
+    #Howto2-Span,
+    #Vind-Span {
         font-size: 25px;
     }
     

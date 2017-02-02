@@ -4,11 +4,15 @@
         color: white;
     }
     
-    
     #backInfo,
     #codeTab {
         text-align: center;
         font-size: 3em;
+    }
+    
+    .col-md-6,
+    .secondTitle {
+        text-align: center;
     }
     
     h1 {
@@ -44,3 +48,26 @@
     body {
         overflow-x: hidden;
     }
+    
+    .vindWhole {
+        width: 35em;
+    }
+    
+    .normal {}
+    
+    .underline {
+        text-decoration: underline;
+    }
+    
+    .red {
+        color: #ff3300;
+    }
+    
+    .blue {
+        color: #1a75ff;
+    }
+    
+    .white {
+        color: white;
+    }
+    
