@@ -3,12 +3,13 @@ console.log("linked");
 
 var backgroundInfo = document.getElementById("backInfo");
 var codeTab = document.getElementById("codeTab");
+var conclusion = document.getElementById("conclusion");
 var backgroundInfoRow = document.getElementById("backInfoRow");
 var codeTabRow = document.getElementById("codeTabRow");
 
 
 backgroundInfo.addEventListener("click", backgroundInfoShow);
-
+conclusion.addEventListener("click", conclusionInfo)
 codeTab.addEventListener("click", codeTabShow);
 
 function backgroundInfoShow() {
@@ -29,9 +30,20 @@ function codeTabShow() {
     console.log("codeTab");
 }
 
+function conclusionInfo() {
+    reset();
+    clear();
+    backgroundInfoRow.className = "hide";
+    codeTabRow.className = "hide";
+    conclusion.className = "green";
+    infoSpan.innerHTML = "";
+    console.log("conclusionInfo");
+}
+
 function reset() {
     codeTab.className = "white";
     backgroundInfo.className = "white";
+    conclusion.className = "white";
     console.log("reset");
 }
 
@@ -115,7 +127,7 @@ function findingMinesInfo() {
 
 function findingTavernsInfo() {
     clear();
-    infoSpan.innerHTML = "<br>" + "finding Taverns";
+    infoSpan.innerHTML = "<br>" + "The finding taverns function is very similar to the finding mines functions. Like it, there are 2 different functions that are used to plot the direction to the closest tavern. The first function simply sets the direction of the bot to the closet tavern by saying myDir = (bot.findPath(myPos, closestTavern()). As you can see, we are running a function in order to set the path of our bot." + "<img class='findTavern' src='../Pictures/findTavern.png' />" + "<br>" + "<br>" + "<hr>" + "The closestTavern function works by using a for loop in order to go through the number of taverns and along with the if statement will determine the closest tavern. First we start with the for loop. The for loop takes in all of the taverns and will look at each of them one by one. Each tavern will go through the if statement. The if statement compares 2 different taverns to see which one is closer to the bot. Once it finds it, it will set that tavern to the variable closestTavern." + "<img class='closeTavern' src='../Pictures/closestTavern.png   ' />";
     console.log("finding taverns");
     findingTaverns.className = "underline";
 
@@ -123,7 +135,7 @@ function findingTavernsInfo() {
 
 function attackingPlayersInfo() {
     clear();
-    infoSpan.innerHTML = "<br>" + "attacking players";
+    infoSpan.innerHTML = "<br>" + " Just like the mines and the tavern functions, the attacking Player function comes in two different parts. The first being determining the distance between any given player and the bot and the other to determine the path between said bot and my bot. The first function uses a for loop and a if statment to determine the distance. The for loop will select every bot possible. It will select each one at a time. The if statment will see whether the selected bot is closer to my bot than any other bot in the entire map. Once it finds the bot that is the closest, it will set the bot to the variable of closestPlayer. " + "<img class='closePlayer' src='../Pictures/findPlayer.png' />" + "<br>" + "<br>" + "<hr>" + "To set the bot in the direction of that bot, we use the function hunt Player with the variable myDir set to the path between the current position that my bot is in and the current position the enemy/selected bot is in. " + "<img class='attackPlayer' src='../Pictures/huntPlayer.png' />";
     console.log("attacking players");
     attackingPlayers.className = "underline";
 }

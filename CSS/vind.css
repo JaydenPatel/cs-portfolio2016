@@ -5,13 +5,17 @@
     }
     
     #backInfo,
-    #codeTab {
+    #codeTab,
+    #conclusion {
         text-align: center;
         font-size: 3em;
     }
     
-    .col-md-6,
     .secondTitle {
+        text-align: center;
+    }
+    
+    .col-md-4 {
         text-align: center;
     }
     
@@ -28,7 +32,8 @@
     
     .show {}
     
-    .col-md-4 {
+    #aiDefine,
+    #vindDefine {
         text-align: center;
         font-size: 2.5em;
         text-decoration: bold;
@@ -71,6 +76,10 @@
         color: white;
     }
     
+    .green {
+        color: #00e600;
+    }
+    
     .serverIMG {
         width: 35em;
         height: 2.5em;
@@ -106,5 +115,19 @@
     .closestMineIMG {
         width: 35em;
         height: 12.5em;
+    }
+    
+    .closeTavern {
+        width: 35em;
+        height: 9em;
+    }
+    
+    .closePlayer {
+        width: 35em;
+        height: 9em;
+    }
+    
+    .attackPlayer {
+        width: 35em;
     }
     
