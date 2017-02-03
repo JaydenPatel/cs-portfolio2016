@@ -5,17 +5,13 @@
     }
     
     #backInfo,
-    #codeTab,
-    #conclusion {
+    #codeTab {
         text-align: center;
         font-size: 3em;
     }
     
+    .col-md-6,
     .secondTitle {
-        text-align: center;
-    }
-    
-    .col-md-4 {
         text-align: center;
     }
     
@@ -32,8 +28,7 @@
     
     .show {}
     
-    #aiDefine,
-    #vindDefine {
+   #aiDefine, #vindDefine{
         text-align: center;
         font-size: 2.5em;
         text-decoration: bold;
@@ -74,10 +69,6 @@
     
     .white {
         color: white;
-    }
-    
-    .green {
-        color: #00e600;
     }
     
     .serverIMG {

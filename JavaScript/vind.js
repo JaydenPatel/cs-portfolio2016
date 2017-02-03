@@ -9,7 +9,7 @@ var codeTabRow = document.getElementById("codeTabRow");
 
 
 backgroundInfo.addEventListener("click", backgroundInfoShow);
-conclusion.addEventListener("click", conclusionInfo)
+conclusion.addEventListener("click" , conclusionInfo)
 codeTab.addEventListener("click", codeTabShow);
 
 function backgroundInfoShow() {
@@ -30,20 +30,14 @@ function codeTabShow() {
     console.log("codeTab");
 }
 
-function conclusionInfo() {
-    reset();
-    clear();
-    backgroundInfoRow.className = "hide";
-    codeTabRow.className = "hide";
-    conclusion.className = "green";
-    infoSpan.innerHTML = "";
+function conclusionInfo(){
+    re
     console.log("conclusionInfo");
 }
 
 function reset() {
     codeTab.className = "white";
     backgroundInfo.className = "white";
-    conclusion.className = "white";
     console.log("reset");
 }
 
