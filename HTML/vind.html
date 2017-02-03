@@ -12,63 +12,236 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
+<div class="unselectable">
 
-
-<body>
-    <div class="container-fluid">
-        <div class="container" style="  margin: 0;padding :0;">
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Nav Bar
+    <body>
+        <div class="container-fluid">
+            <div class="container" style="  margin: 0;padding :0;">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Nav Bar
     <span class="caret"></span></button>
-                <ul class="dropdown-menu dropdown-menu-&#x2190;">
-                    <li><a href="index.html">Homepage</a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
-                    <li><a href="hardware.html">Hardware</a></li>
-                    <li><a href="howto.html">How to</a></li>
-                    <li><a href="calc.html">Calcutator</a></li>
-                    <li><a href="todo.html">To Do List</a></li>
-                    <li><a href="howto2.html">How to #2</a></li>
-                    <li class="disabled"> <a href="vind.html">Vindinium</a></li>
-                </ul>
+                    <ul class="dropdown-menu dropdown-menu-&#x2190;">
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="aboutme.html">About Me</a></li>
+                        <li><a href="hardware.html">Hardware</a></li>
+                        <li><a href="howto.html">How to</a></li>
+                        <li><a href="calc.html">Calcutator</a></li>
+                        <li><a href="todo.html">To Do List</a></li>
+                        <li><a href="howto2.html">How to #2</a></li>
+                        <li class="disabled"> <a href="vind.html">Vindinium</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <h1>How to Make Vindinium AI</h1>
+            <h1>How to Make Vindinium AI</h1>
 
-        <div class="row">
-            <div class="col-md-6" class="secondTitle">
-                <text id="backInfo" class="normal"> Background Information</text>
+            <div class="row">
+                <div class="col-md-6" class="secondTitle">
+                    <text id="backInfo" class="normal"> Background Information</text>
+                </div>
+                <div class="col-md-6" class="secondTitle">
+                    <text id="codeTab" class="normal">  The Code Behind it All</text>
+                </div>
             </div>
-            <div class="col-md-6" class="secondTitle">
-                <text id="codeTab" class="normal">  The Code Behind it All</text>
+            <br>
+            <div class="hide" class="row" id="backInfoRow">
+                <div class='col-md-2'></div>
+                <div class='col-md-4'><text id="aiDefine" class="normal">What is AI?</text></div>
+                <div class='col-md-4'><text id="vindDefine" class="normal">What is Vindinium?</text></div>
+                <div class='col-md-2'></div>
             </div>
-            <div class="col"
-        </div>
-        <br>
-        <div class="hide" class="row" id="backInfoRow">
-            <div class='col-md-2'></div>
-            <div class='col-md-4'><text id="aiDefine" class="normal">What is AI?</text></div>
-            <div class='col-md-4'><text id="vindDefine" class="normal">What is Vindinium?</text></div>
-            <div class='col-md-2'></div>
-        </div>
-        <div class="hide" class="row" id="codeTabRow">
-            <div class='col-md-2'><text class="normal" id="beginCode">Starting Point</text></div>
-            <div class='col-md-2'><text id="Emotion" class="normal">Emotion Factor</text></div>
-            <div class='col-md-2'><text id="Task" class="normal">Task Decider</text></div>
-            <div class='col-md-2'><text class="normal" id="FindingMines">Finding Mines</text></div>
-            <div class='col-md-2'><text id="FindingTaverns" class="normal">Finding Taverns</text></div>
-            <div class='col-md-2'><text id="AttackingPlayers" class="normal">Attacking Players</text></div>
+            <div class="hide" class="row" id="codeTabRow">
+                <div class='col-md-2'><text class="normal" id="beginCode">Overall Code</text></div>
+                <div class='col-md-2'><text id="Emotion" class="normal">Emotion Factor</text></div>
+                <div class='col-md-2'><text id="Task" class="normal">Task Decider</text></div>
+                <div class='col-md-2'><text class="normal" id="FindingMines">Finding Mines</text></div>
+                <div class='col-md-2'><text id="FindingTaverns" class="normal">Finding Taverns</text></div>
+                <div class='col-md-2'><text id="AttackingPlayers" class="normal">Attacking Players</text>s</div>
 
-        </div>
-        <br>
-        <div class="row">
-            <!--            <div class="col-md-2 col-md-push-8"> </div>-->
-            <div class="col-md-8 col-md-push-2">
-                <span id="infoSpan"></span>
+            </div><br>
+            <div class="row">
+                <!--            <div class="col-md-2 col-md-push-8"> </div>-->
+                <div class="col-md-8 col-md-push-2">
+                    <span id="infoSpan"></span>
+                </div>
+                <div class="col-md-2"> </div>
             </div>
-            <div class="col-md-2"> </div>
         </div>
-    </div>
-</body>
-<script type="text/javascript" src="../JavaScript/vind.js"></script>
+        <div id="wholeCode">
+            <pre>
+           var Bot = require('bot');
+var PF = require('pathfinding');
+var bot = new Bot('i4gtr6op', 'arena/training', 'http://vindinium.org');
+var bot = new Bot('29hguoyr', 'arena', 'SERVER KEY HERE');
+var goDir;
+var Promise = require('bluebird');
+
+Bot.prototype.botBrain = function() {
+    return new Promise(function(resolve, reject) {
+        _this = bot;
+        //////* Write your bot below Here *//////
+        //////* Set `myDir` in the direction you want to go and then bot.goDir is set to myDir at the bottom *////////
+
+        /*                                      * 
+         * This Code is global data!            *
+         *                                      */
+
+        // Set myDir to what you want and it will set bot.goDir to that direction at the end.  Unless it is "none"
+        if (bot.data.game.turn = 1) {
+            bot.allMines = bot.freeMines;
+        }
+        var myDir;
+        var myPos = [bot.yourBot.pos.x, bot.yourBot.pos.y];
+
+        //Lines 26-30 creates an array that has all of the enemy bots
+        var enemyBots = [];
+        if (bot.yourBot.id != 1) enemyBots.push(bot.bot1);
+        if (bot.yourBot.id != 2) enemyBots.push(bot.bot2);
+        if (bot.yourBot.id != 3) enemyBots.push(bot.bot3);
+        if (bot.yourBot.id != 4) enemyBots.push(bot.bot4);
+
+        //Lines 33-37 creates an array that containes all mines that are owned or that are free
+        var enemyMines = [];
+        enemyMines = enemyMines.concat(enemyBots[0].mines);
+        enemyMines = enemyMines.concat(enemyBots[1].mines);
+        enemyMines = enemyMines.concat(enemyBots[2].mines);
+        enemyMines = enemyMines.concat(bot.freeMines);
+        // console.log(enemyMines);
+
+        //Variables for the 3 emotions
+        var scare = 100 - bot.yourBot.life;
+        var anger = findAnger();
+        var greed = findGreed();
+
+
+        /*                                      * 
+         * This Code Decides WHAT to do         *
+         *                                    */
+
+        console.log("Anger: " + anger + " Scare: " + scare + " Greed: " + greed)
+        if (scare > anger && scare > greed) {
+            findTavern();
+        }
+        else if (anger > greed) {
+            huntPlayer();
+        }
+        else {
+            findMine();
+        }
+
+
+        /*                                      * 
+         * This Code Determines HOW to do it    *
+         *                                      */
+
+        //Determines how much anger the bot should have
+        function findAnger() {
+            var closePlayer = closestPlayer();
+            var distance = bot.findDistance(myPos, [closePlayer.pos.x, closePlayer.pos.y]);
+            var mineModifier = (bot.allMines.length - closePlayer.mineCount) * 10
+            var tempAnger = 100 - distance * 10 - scare / 2 - mineModifier - closePlayer.life;
+            if (tempAnger > 100) {
+                tempAnger = 100;
+            }
+            if (closePlayer.mineCount === 0) {
+                anger = 0
+            }
+            return tempAnger;
+        }
+
+        //Determines how much greed the bot will have
+        function findGreed() {
+            var closeMine = closestMine();
+            var distance = bot.findDistance(myPos, closeMine);
+            // console.log(bot);
+            var mineModifier = (bot.allMines.length - bot.yourBot.mineCount) * 10;
+
+            var tempGreed = 100 - distance * 10 - scare + mineModifier;
+
+            if (scare < 30) {
+                tempGreed = 30;
+            }
+            else if (bot.allMines === bot.yourBot.mines) {
+                tempGreed = 0;
+                scare = 100;
+            }
+            return tempGreed;
+        }
+        //Plots the direction to a mine 
+        function findMine() {
+            var closeMine = closestMine();
+            myDir = bot.findPath(myPos, closeMine);
+            console.log(myDir)
+        }
+        //Finds the closest mine based on the current postition of the bot
+        function closestMine() {
+            var closestMine = enemyMines[0];
+            // console.log('Closest Mine:'+ closestMine)
+            for (i = 0; i < enemyMines.length; i++) {
+                if (bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, enemyMines[i]) && bot.findPath(myPos, enemyMines[i])) {
+                    closestMine = enemyMines[i];
+                }
+                // console.log('Closest Mine:'+ closestMine)
+            }
+            // console.log(closestMine)
+            return closestMine;
+        }
+        //sets the direction of the bot to a tavern
+        function findTavern() {
+            console.log("Going to Tavern");
+            myDir = bot.findPath(myPos, closestTavern())
+        }
+        //finds the nearest tavern based on the current location of the bot
+        function closestTavern() {
+            var closestTavern = bot.taverns[0];
+            for (i = 0; i < bot.taverns.length; i++) {
+                if (bot.findDistance(myPos, closestTavern) > bot.findDistance(myPos, bot.taverns[i])) {
+                    closestTavern = bot.taverns[i];
+                }
+            }
+            return closestTavern;
+        }
+        //find the closest player relative to the bot
+        function closestPlayer() {
+            var closestPlayer = enemyBots[0];
+            for (i = 0; i++; i < enemyBots.length) {
+                if (bot.findDistance(myPos, closestPlayer.pos) > enemyBots[i]) {
+                    closestPlayer = enemyBots[i];
+                }
+            }
+            return closestPlayer;
+        }
+        //attacks an enemy player
+        function huntPlayer() {
+            var huntedBot = closestPlayer();
+            console.log("Hunting bot: " + huntedBot.id);
+            myDir = bot.findPath(myPos, [huntedBot.pos.x, huntedBot.pos.y]);
+        }
+
+
+        /*                                                                                                                              * 
+         * This Code Sets your direction based on myDir.  If you are trying to go to a place that you can't reach, you move randomly.   *
+         * Otherwise you move in the direction set by your code.  Feel free to change this code if you want.                            */
+        if (myDir === "none") {
+            console.log("Going Random!");
+            var rand = Math.floor(Math.random() * 4);
+            var dirs = ["north", "south", "east", "west"];
+            bot.goDir = dirs[rand];
+        }
+        else {
+            bot.goDir = myDir;
+        }
+
+
+
+        ///////////* DON'T REMOVE ANTYTHING BELOW THIS LINE *//////////////
+        resolve();
+    });
+}
+bot.runGame();
+</pre>
+        </div>
+    </body>
+    <script type="text/javascript" src="../JavaScript/vind.js"></script>
+</div>
 
 </html>
