@@ -30,7 +30,9 @@
     #Calc-Div,
     #Todo-Div,
     #Howto2-Div,
-    #Vind-Div {
+    #Vind-Div,
+    #BG-Div,
+    #howto3-Div {
         font-size: 50px;
     }
     
@@ -69,13 +71,25 @@
         color: black;
     }
     
+    #BG-Div:hover {
+        background-color: #00ffff;
+        color: black;
+    }
+    
+    #howto3-Div:hover {
+        background-color: #00ffff;
+        color: black;
+    }
+    
     #About-Span,
     #Hardware-Span,
     #HTML-Span,
     #Calc-Span,
     #Todo-Span,
     #Howto2-Span,
-    #Vind-Span {
+    #Vind-Span,
+    #howto3-Span,
+    #BG-Span {
         font-size: 25px;
     }
     
