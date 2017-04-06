@@ -8,3 +8,110 @@ body {
 .container {
     padding: 0;
 }
+
+html {
+    background-color: black;
+}
+
+h1,
+h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.col6 {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: bold;
+    background-color: black;
+    color: white;
+}
+
+.HTML {
+    display: none;
+}
+
+.JavaScript {
+    display: none;
+}
+
+.show {
+    background-color: black;
+    color: white;
+}
+
+.col-md-6,
+.col-md-4,
+.col-md-3,
+#wholeThing {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.img {
+    width: 300px;
+    height: 500px;
+}
+
+.col-md-3,
+#wholeThing {
+    font-size: 35px;
+}
+
+.information {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+
+.blue {
+    color: #3366ff;
+    text-decoration: bold;
+}
+
+.red {
+    color: #ff3333;
+}
+
+.black {
+    color: white;
+}
+
+div.wrap {
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+
+#text {
+    display: inline;
+}
+
+#htmlDiv {
+    display: none;
+}
+
+#wholeThing {
+    display: none;
+}
+
+.container,
+.dropdown {
+    position: absolute;
+    text-align: left
+}
+
+.oimg {
+    width: 724px;
+    height: 191px;
+}
+
+.br {
+    background-color: black;
+    color: white;
+}
